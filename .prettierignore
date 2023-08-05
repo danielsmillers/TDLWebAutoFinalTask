@@ -1,0 +1,7 @@
+node_modules
+.prettierrc
+tsconfig.json
+readme.md
+package.json
+package-lock.json
+/test-results

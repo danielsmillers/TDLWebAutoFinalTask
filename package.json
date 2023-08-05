@@ -1,0 +1,32 @@
+{
+  "name": "tdlwebautofinaltask",
+  "version": "1.0.0",
+  "description": "Playright + TypeScript + CucumberJS E2E Testing Framework",
+  "main": "index.js",
+  "scripts": {
+    "format": "npx prettier --write .",
+    "test": "npx cucumber-js -p runner",
+    "test:tags": "npx cucumber-js -p runner --tags",
+    "report": "npx ts-node ./config/HTMLReporter.ts",
+    "test:generator": "npx playwright codegen https://www.saucedemo.com"
+  },
+  "keywords": [
+    "Playwright",
+    "TypeScript",
+    "CucumberJS",
+    "E2E Testing"
+  ],
+  "author": "Daniels Millers",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.3.0",
+    "@playwright/test": "^1.36.2",
+    "dotenv": "^16.3.1",
+    "moment": "^2.29.4",
+    "multiple-cucumber-html-reporter": "^3.4.0",
+    "prettier": "^3.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "winston": "^3.10.0"
+  }
+}

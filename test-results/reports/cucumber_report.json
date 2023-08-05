@@ -1,0 +1,253 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "e2e-tests-suite-to-cover-saucedemo.com-functionality;user-orders-a-product-from-the-swaglabs-store",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User orders a product from the SwagLabs store",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 182434500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User has opened Swag Labs website",
+            "match": {
+              "location": "step-definitions\\saucedemo.login-page.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1692029998
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User inputs username - \"standard_user\"",
+            "match": {
+              "location": "step-definitions\\saucedemo.login-page.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 159865499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User inputs password - \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\saucedemo.login-page.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127903098
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User press the “Login” button",
+            "match": {
+              "location": "step-definitions\\saucedemo.login-page.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 190626398
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User is on Swag Labs products page",
+            "match": {
+              "location": "step-definitions\\saucedemo.product-page.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6437198
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "User adds - \"Sauce Labs Fleece Jacket\" to the shopping cart",
+            "match": {
+              "location": "step-definitions\\saucedemo.product-page.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 144649899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User opens shopping cart",
+            "match": {
+              "location": "step-definitions\\saucedemo.product-page.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140061698
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "User sees product - \"Sauce Labs Fleece Jacket\" with price - \"$49.99\"",
+            "match": {
+              "location": "step-definitions\\saucedemo.cart-page.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8503398
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User press “Checkout” button",
+            "match": {
+              "location": "step-definitions\\saucedemo.cart-page.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 136272600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User fills the checkout information form",
+            "match": {
+              "location": "step-definitions\\saucedemo.checkout-page.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 377104898
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User press the “Continue” button to continue with the order",
+            "match": {
+              "location": "step-definitions\\saucedemo.checkout-page.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147420899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User sees correct product details in checkout overview",
+            "match": {
+              "location": "step-definitions\\saucedemo.checkout-page.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6695699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "User press the “Finish” button",
+            "match": {
+              "location": "step-definitions\\saucedemo.checkout-page.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147638699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "User sees that order has been completed",
+            "match": {
+              "location": "step-definitions\\saucedemo.checkout-page.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4497600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "User clicks on “Back Home” button",
+            "match": {
+              "location": "step-definitions\\saucedemo.checkout-page.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 137437699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "User is back on Swag Labs products page",
+            "match": {
+              "location": "step-definitions\\saucedemo.product-page.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4576198
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 34375000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FINAL_TASK",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "e2e-tests-suite-to-cover-saucedemo.com-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "E2E Tests Suite To Cover SAUCEDEMO.COM Functionality",
+    "tags": [],
+    "uri": "features\\saucedemo.feature"
+  }
+]
